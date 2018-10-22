@@ -6,9 +6,10 @@ baseApiUrl = '/api/v3'
 
 with open('config.json') as json_data_file:
     jsonData = json.load(json_data_file)
-    clientId = jsonData['clientId']
-    clientSecret = jsonData['clientSecret']
-    refreshToken = jsonData['refreshToken']
+
+clientId = jsonData['clientId']
+clientSecret = jsonData['clientSecret']
+refreshToken = jsonData['refreshToken']
 
 
 def RefreshToken(): 
