@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Hello from lifeboard</title>
+
+<h1>Authorized</h1>
+<h3>{{athleteInfo.firstname}}</h3>
+
+{% for activity in athleteActivities %}
+    <p>{{activity.name}}</p>
+{% endfor %}

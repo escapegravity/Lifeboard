@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Hello from lifeboard</title>
+
+{% if clientId %}
+  <h1>Hello {{ clientId }}!</h1>
+  <a href="https://www.strava.com/oauth/authorize?client_id={{ clientId }}&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Fauthorize%2Fsuccess&response_type=code&approval_prompt=force&scope=read,activity:read" target="_blank">Authorize</a>
+{% else %}
+  <h1>Hello World without clientId</h1>
+{% endif %}
