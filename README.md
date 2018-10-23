@@ -4,5 +4,6 @@
 {
     "clientId":"",
     "clientSecret":"",
-    "refreshToken":""
+    "refreshToken":"",
+    "code":""
 }
