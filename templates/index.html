@@ -1,9 +1,31 @@
-<!doctype html>
-<title>Hello from lifeboard</title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lifeboard</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
 
-{% if clientId %}
-  <h1>Hello {{ clientId }}!</h1>
-  <a href="https://www.strava.com/oauth/authorize?client_id={{ clientId }}&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Fauthorize%2Fsuccess&response_type=code&approval_prompt=force&scope=read,activity:read" target="_blank">Authorize</a>
-{% else %}
-  <h1>Hello World without clientId</h1>
-{% endif %}
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <h1>Lifeboard</h1>
+    <h2>Strava</h2>
+    <p>
+      <a href="/strava">Go to Strava</a>
+    </p>
+    
+    <h2>This week</h2>
+    <ul>
+      <li>Måndag</li>
+      <li>Tisdag</li>
+      <li>Onsdag</li>
+    </ul>
+
+    <h2>Remember</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </body>
+</html>

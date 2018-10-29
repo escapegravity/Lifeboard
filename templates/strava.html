@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lifeboard</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+
+    <h1>Strava</h1>
+
+      {% if clientId %}
+      <h1>Hello {{ clientId }}!</h1>
+      <h3>Authorize Strava</h3>
+      <a href="https://www.strava.com/oauth/authorize?client_id={{ clientId }}&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Fauthorize%2Fsuccess&response_type=code&approval_prompt=force&scope=read,activity:read">Authorize</a>
+    {% else %}
+      <h1>Hello World without clientId</h1>
+    {% endif %}
+  </body>
+</html>
