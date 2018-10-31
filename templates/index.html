@@ -1,31 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Lifeboard</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
+{% extends "layout.html" %}
+{% block title %}Start{% endblock %}
+{% block content %}
+<h1>Lifeboard</h1>
+<h2>Strava</h2>
+<p>
+  <a href="/strava">Go to Strava</a>
+</p>
 
-    <link rel="stylesheet" href="/styles/styles.css">
-  </head>
-  <body>
-    <h1>Lifeboard</h1>
-    <h2>Strava</h2>
-    <p>
-      <a href="/strava">Go to Strava</a>
-    </p>
-    
-    <h2>This week</h2>
-    <ul>
-      <li>Måndag</li>
-      <li>Tisdag</li>
-      <li>Onsdag</li>
-    </ul>
+<h2>This week</h2>
+<ul>
+  <li>Måndag</li>
+  <li>Tisdag</li>
+  <li>Onsdag</li>
+</ul>
 
-    <h2>Remember</h2>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-  </body>
-</html>
+<h2>Remember</h2>
+<ul class="list-group">
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+    <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+    <li class="list-group-item list-group-item-success">A simple success list group item</li>
+    <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+    <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+    <li class="list-group-item list-group-item-info">A simple info list group item</li>
+    <li class="list-group-item list-group-item-light">A simple light list group item</li>
+    <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+  </ul>
+{% endblock %}

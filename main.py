@@ -1,5 +1,5 @@
 import json
-import strava
+import services.strava
 from flask import Flask
 from flask import render_template
 
