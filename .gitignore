@@ -2,3 +2,4 @@
 config.json
 client_id.json
 *.pyc
+.vscode/
